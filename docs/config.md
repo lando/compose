@@ -1,24 +1,9 @@
 ---
-description: If there isn't a service Lando provides out of the box use this to add any other Docker image using Docker Compose syntax.
+title: Configuration
+description: Learn how to configure the Lando Compose service.
 ---
 
-# Compose
-
-This service is a "catch all" that allows power users to specify custom services that are not currently one of Lando's [supported services](https://docs.lando.dev/config/services.html). You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/config/services.html) top-level config in your [Landofile](https://docs.lando.dev/config/lando.html).
-
-Technically speaking, this service is just a way for a user to define a service directly using the [Docker Compose V3](https://docs.docker.com/compose/compose-file/) file format.
-
-**THIS MEANS THAT IT IS UP TO THE USER TO DEFINE A SERVICE CORRECTLY**.
-
-This service is useful if you are:
-
-1. Thinking about contributing your own custom Lando service and just want to prototype something
-2. Using Docker Compose config from other projects
-3. Need a service not currently provided by Lando itself
-
-[[toc]]
-
-## Configuration
+# Configuration
 
 Unlike other services, `compose` does not require a `version`, instead it allows you to directly configure Docker Compose's top-level `volumes`, `networks`, and `services` config directly.
 
@@ -43,9 +28,9 @@ services:
       my-network:
 ```
 
-### Setting the app mount
+## Setting the app mount
 
-Many Docker images will put code in `/app`. This directly conflicts with Lando's default codebase mount point. If you are running into a problem because of this collision, we recommend you [disable](./services.html#app-mount) the `app_mount` by setting it to `false` or `disabled`.
+Many Docker images will put code in `/app`. This directly conflicts with Lando's default codebase mount point. If you are running into a problem because of this collision, we recommend you [disable](https://docs.lando.dev/config/services.html#app-mount) the `app_mount` by setting it to `false` or `disabled`.
 
 This will prevent Lando from mounting your codebase to `/app` so the Docker image can use its own code at `/app`.
 
@@ -60,7 +45,7 @@ services:
 ```
 
 
-### Setting the command
+## Setting the command
 
 Note that while `compose` services also get the same Lando *secret sauce*, there is a notable difference. By default, Lando will hijack the Docker containers `entrypoint`. This means if your custom container sets its own entrypoint, you will need to remove that entrypoint and set it as the first argument in the `command`.
 
@@ -83,7 +68,7 @@ services:
 
 In the example above, `docker-php-entrypoint` is the default `entrypoint` for the `drupal:8` image but we have moved it so that it is the first argument of `command`. This both allows the container to run as expected and allows Lando to do its thing.
 
-### Choosing the user
+## Choosing the user
 
 Many non-Lando containers do not run as the `root` user by default. This is OK but comes with a few caveats. The most relevant are that Lando will not be able to execute its normal boot up steps which:
 
@@ -119,5 +104,3 @@ services:
 The relevant pieces here are setting `user: root` and then the environment variable `LANDO_DROP_USER` to whatever user the container is suppose to run as.
 
 In this example the container will boot as `root` do the Lando things it needs to do and then run `docker-php-entrypoint apache2-foreground` as `otheruser`.
-
-<RelatedGuides tag="Compose"/>
