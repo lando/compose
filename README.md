@@ -1,65 +1,47 @@
-# Lando Compose Plugin
+# Compose Lando Plugin
 
-The Lando Compose plugin service.
+This is the _official_ [Lando](https://lando.dev) plugin for the Compose service.
 
-## Installation
+This service is a "catch all" that allows power users to specify custom services that are not currently one of Lando's [supported services](https://docs.lando.dev/config/services.html). You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/config/services.html) top-level config in your [Landofile](https://docs.lando.dev/config).
 
-```bash
-# With npm
-npm install @lando/compose
+Of course, once a user is running their Compose project with Lando they can take advantage of [all the other awesome development features](https://docs.lando.dev) Lando provides.
 
-# With yarn
-yarn add @lando/compose
+## Basic Usage
+
+Add a `compose` service to your Landofile
+
+```yaml
+services:
+  custom-service:
+    type: compose
+    app_mount: delegated
+    services:
+      image: drupal:8
+      command: docker-php-entrypoint apache2-foreground
+      ports:
+        - '80'
+    volumes:
+      my-volume:
+    networks:
+      my-network:
 ```
+
+For more info you should check out the [docs](https://docs.lando.dev/compose):
+
+* [Getting Started](https://docs.lando.dev/compose/)
+* [Configuration](https://docs.lando.dev/compose/config.html)
+* [Examples](https://github.com/lando/compose/tree/main/examples)
+* [Development](https://docs.lando.dev/compose/development.html)
 
 ## Issues, Questions and Support
 
-If you have a question or would like some community support we recommend you [join us on Slack](https://launchpass.com/devwithlando). Note that this is the Slack community for [Lando](https://lando.dev) but we are more than happy to help with this module as well!
+If you have a question or would like some community support we recommend you [join us on Slack](https://launchpass.com/devwithlando).
 
 If you'd like to report a bug or submit a feature request then please [use the issue queue](https://github.com/lando/compose/issues/new/choose) in this repo.
 
 ## Changelog
 
 We try to log all changes big and small in both [THE CHANGELOG](https://github.com/lando/compose/blob/main/CHANGELOG.md) and the [release notes](https://github.com/lando/compose/releases).
-
-
-## Development
-
-* Requires [Node 14+](https://nodejs.org/dist/latest-v14.x/)
-* Prefers [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
-
-```bash
-git clone https://github.com/lando/compose.git && cd compose
-yarn install
-```
-
-If you dont' want to install Node 14 or Yarn for whatever reason you can install [Lando](https://docs.lando.dev/basics/installation.html) and use that:
-
-```bash
-git clone https://github.com/lando/compose.git && cd compose
-# Install deps and get node
-lando start
-
-# Run commands
-lando node
-lando yarn
-```
-
-## Testing
-
-```bash
-# Lint the code
-yarn lint
-
-# Run unit tests
-yarn test
-```
-
-## Releasing
-
-```bash
-yarn release
-```
 
 ## Contributors
 
@@ -69,6 +51,7 @@ yarn release
 
 Made with [contributors-img](https://contrib.rocks).
 
-## Other Resources
+## Other Selected Resources
 
-* [Important advice](https://www.youtube.com/watch?v=WA4iX5D9Z64)
+* [LICENSE](https://github.com/lando/compose/blob/main/LICENSE.md)
+* [The best professional advice ever](https://www.youtube.com/watch?v=tkBVDh7my9Q)
