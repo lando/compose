@@ -53,8 +53,8 @@ lando ssh -s custom-database -u root -c "echo things > /var/lib/postgresql/data/
 # Should not mount app.root for services with app_mount set to false or disabled
 # https://github.com/lando/lando/issues/2029
 # https://github.com/lando/lando/issues/1487
-lando ssh -s pghero -c "cat /app/app.json"
-lando ssh -s pghero2 -c "cat /app/app.json"
+lando ssh -s pghero -c "cat /app/config.ru"
+lando ssh -s pghero2 -c "cat /app/config.ru"
 
 # Should be able to rebuild without pulling local image and named volumes should work
 lando rebuild -y
