@@ -4,6 +4,12 @@ description: If there isn't a service Lando provides out of the box use this to 
 next: ./config.html
 ---
 
+::: danger DEPRECATED
+This Lando Plugin is now **DEPRECATED** and is no longer getting updates.
+
+We recommend you check out the [Lando Service](https://docs.lando.dev/core/v3/lando-service.html).
+:::
+
 # Compose
 
 This service is a "catch all" that allows power users to specify custom services that are not currently one of Lando's [supported services](https://docs.lando.dev/config/services.html). You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/config/services.html) top-level config in your [Landofile](https://docs.lando.dev/config).

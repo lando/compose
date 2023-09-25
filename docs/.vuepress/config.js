@@ -15,6 +15,11 @@ export default defineUserConfig({
     ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap'}],
   ],
   theme: defaultThemePlus({
+    alert: {
+      content: 'DEPRECATED in favor of <a href="https://docs.lando.dev/core/v3/lando-service.html">this</a>.',
+      scheme: 'danger',
+      closeable: true,
+    },
     landoDocs: true,
     logo: '/images/icon.svg',
     docsDir: 'docs',
