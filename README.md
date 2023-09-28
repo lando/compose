@@ -1,3 +1,9 @@
+# DEPRECATED!
+
+This Lando Plugin is now **DEPRECATED** and is no longer getting updates.
+
+We recommend you check out the [Lando Service](https://docs.lando.dev/core/v3/lando-service.html).
+
 # Compose Lando Plugin
 
 This is the _official_ [Lando](https://lando.dev) plugin for the Compose service.
