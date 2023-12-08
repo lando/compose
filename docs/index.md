@@ -39,7 +39,7 @@ mkdir -p ~/.lando/plugins
 # Install plugin
 # NOTE: Modify the "npm install @lando/compose" line to install a particular version eg
 # npm install @lando/compose@0.5.2
-docker run --rm -it -v ${HOME}/.lando/plugins:/plugins -w /tmp node:14-alpine sh -c \
+docker run --rm -it -v ${HOME}/.lando/plugins:/plugins -w /tmp node:18-alpine sh -c \
   "npm init -y \
   && npm install @lando/compose --production --flat --no-default-rc --no-lockfile --link-duplicates \
   && npm install --production --cwd /tmp/node_modules/@lando/compose \
@@ -56,6 +56,7 @@ lando --clear
 # @NOTE: This doesn't actaully work yet
 hyperdrive install @lando/compose
 ```
+:::
 ::::
 
 You should be able to verify the plugin is installed by running `lando config --path plugins` and checking for `@lando/compose`. This command will also show you _where_ the plugin is being loaded from.
