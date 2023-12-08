@@ -2,7 +2,6 @@
 
 // Modules
 const _ = require('lodash');
-const utils = require('./../../lib/utils');
 
 // Builder
 module.exports = {
@@ -21,7 +20,7 @@ module.exports = {
         services: _.set(
           {},
           options.name,
-          utils.normalizeOverrides(options.services, options._app.root, options.volumes),
+          require('../utils/normalize-overrides')(options.services, options._app.root, options.volumes),
         ),
         networks: options.networks,
         volumes: options.volumes,

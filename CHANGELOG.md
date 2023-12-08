@@ -1,6 +1,16 @@
-## v1.0.0 - [December 7, 2023](https://github.com/lando/compose/releases/tag/v1.0.0)
+## v1.0.1 - [December 7, 2023](https://github.com/lando/compose/releases/tag/v1.0.1)
 
-* Dialed fully for `lando update`
+* Dialed fully for `lando update` but still **DEPRECATED**
+
+This is a final _final_ courtesy release. Please transition to [this](https://docs.lando.dev/core/v3/lando-service.html) ASAP.
+
+## v1.0.0 - [September 23, 2023](https://github.com/lando/compose/releases/tag/v1.0.0)
+
+**DEPRECATED**
+
+* This is a final courtesy release.
+
+Please transition to [this](https://docs.lando.dev/core/v3/lando-service.html) ASAP.
 
 ## v0.8.0 - [July 3, 2023](https://github.com/lando/compose/releases/tag/v0.8.0)
 
@@ -12,12 +22,6 @@
 
 * Added `bundle-dependencies` to release process.
 * Fixed bug in plugin dogfooding test.
-
-## IN DEVELOPMENT
-
-## v0.6.0 - [September 7, 2022](https://github.com/lando/compose/releases/tag/v0.6.0)
-
-* Hyperdrived
 
 ## v0.5.0 - [January 5, 2022](https://github.com/lando/compose/releases/tag/v0.5.0)
 
