@@ -34,16 +34,9 @@ services:
 
 For more info you should check out the [docs](https://docs.lando.dev/compose):
 
-* [Getting Started](https://docs.lando.dev/compose/)
 * [Configuration](https://docs.lando.dev/compose/config.html)
 * [Examples](https://github.com/lando/compose/tree/main/examples)
 * [Development](https://docs.lando.dev/compose/development.html)
-
-## Issues, Questions and Support
-
-If you have a question or would like some community support we recommend you [join us on Slack](https://launchpass.com/devwithlando).
-
-If you'd like to report a bug or submit a feature request then please [use the issue queue](https://github.com/lando/compose/issues/new/choose) in this repo.
 
 ## Changelog
 
