@@ -5,7 +5,7 @@ description: Learn how to develop and contribute to the Lando Compose service
 
 # Development
 
-This guide contains information to help onboard developers to work on the [compose](https://compose.microsoft.com/en-us/) integration, hereafter referred to as *the plugin*.
+This guide contains information to help onboard developers to work on the `compose` plugin, hereafter referred to as *the plugin*.
 
 ## Requirements
 

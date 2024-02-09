@@ -34,7 +34,6 @@ services:
 
 For more info you should check out the [docs](https://docs.lando.dev/compose):
 
-* [Getting Started](https://docs.lando.dev/compose/)
 * [Configuration](https://docs.lando.dev/compose/config.html)
 * [Examples](https://github.com/lando/compose/tree/main/examples)
 * [Development](https://docs.lando.dev/compose/development.html)
