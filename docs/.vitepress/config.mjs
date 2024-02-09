@@ -46,7 +46,6 @@ function sidebar() {
       text: 'Help & Support',
       collapsed: false,
       items: [
-        {text: 'GitHub', link: 'https://github.com/lando/compose/issues/new/choose'},
         {text: 'Slack', link: 'https://www.launchpass.com/devwithlando'},
         {text: 'Contact Us', link: '/support'},
       ],
