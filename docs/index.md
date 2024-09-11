@@ -7,12 +7,12 @@ next: ./config.html
 ::: danger DEPRECATED
 This Lando Plugin is now **DEPRECATED** and is no longer getting updates.
 
-We recommend you check out the [Lando Service](https://docs.lando.dev/core/v3/lando-service.html).
+We recommend you check out the [Lando Service](https://docs.lando.dev/core/v3/services/lando.html).
 :::
 
 # Compose
 
-This service is a "catch all" that allows power users to specify custom services that are not currently one of Lando's [supported services](https://docs.lando.dev/core/v3/lando-service.html). You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/core/v3/lando-service.html) top-level config in your [Landofile](https://docs.lando.dev/core/v3).
+This service is a "catch all" that allows power users to specify custom services that are not currently one of Lando's [supported services](https://docs.lando.dev/core/v3/services/lando.html). You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/core/v3/services/lando.html) top-level config in your [Landofile](https://docs.lando.dev/core/v3).
 
 Technically speaking, this service is just a way for a user to define a service directly using the [Docker Compose V3](https://docs.docker.com/compose/compose-file/) file format.
 

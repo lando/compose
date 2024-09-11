@@ -2,7 +2,7 @@
 
 This Lando Plugin is now **DEPRECATED** and is no longer getting updates.
 
-We recommend you check out the [Lando Service](https://docs.lando.dev/core/v3/lando-service.html).
+We recommend you check out the [Lando Service](https://docs.lando.dev/core/v3/services/lando.html).
 
 # Compose Lando Plugin
 
