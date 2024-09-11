@@ -8,7 +8,7 @@ description: Learn how to configure the Lando Compose service.
 Unlike other services, `compose` does not require a `version`, instead it allows you to directly configure Docker Compose's top-level `volumes`, `networks`, and `services` config directly.
 
 ::: tip We highly recommend you check the Docker Compose docs!
-`services`, `volumes` and `networks` below come directly from Docker Compose so we *highly recommend* you check out their [docs](https://docs.docker.com/compose/compose-file/).
+`services`, `volumes` and `networks` below come directly from Docker Compose so we *highly recommend* you check out their [docs](https://docs.docker.com/reference/compose-file/).
 :::
 
 ```yaml
@@ -30,7 +30,7 @@ services:
 
 ## Setting the app mount
 
-Many Docker images will put code in `/app`. This directly conflicts with Lando's default codebase mount point. If you are running into a problem because of this collision, we recommend you [disable](https://docs.lando.dev/core/v3/lando-service.html#app-mount) the `app_mount` by setting it to `false` or `disabled`.
+Many Docker images will put code in `/app`. This directly conflicts with Lando's default codebase mount point. If you are running into a problem because of this collision, we recommend you [disable](https://docs.lando.dev/core/v3/services/lando.html#app-mount) the `app_mount` by setting it to `false` or `disabled`.
 
 This will prevent Lando from mounting your codebase to `/app` so the Docker image can use its own code at `/app`.
 

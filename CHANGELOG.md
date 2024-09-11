@@ -5,7 +5,7 @@
 
 * Dialed fully for `lando update` but still **DEPRECATED**
 
-This is a final _final_ courtesy release. Please transition to [this](https://docs.lando.dev/core/v3/lando-service.html) ASAP.
+This is a final _final_ courtesy release. Please transition to [this](https://docs.lando.dev/core/v3/services/lando.html) ASAP.
 
 ## v1.0.0 - [September 23, 2023](https://github.com/lando/compose/releases/tag/v1.0.0)
 
@@ -13,7 +13,7 @@ This is a final _final_ courtesy release. Please transition to [this](https://do
 
 * This is a final courtesy release.
 
-Please transition to [this](https://docs.lando.dev/core/v3/lando-service.html) ASAP.
+Please transition to [this](https://docs.lando.dev/core/v3/services/lando.html) ASAP.
 
 ## v0.8.0 - [July 3, 2023](https://github.com/lando/compose/releases/tag/v0.8.0)
 
