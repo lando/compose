@@ -8,7 +8,7 @@ description: Learn how to configure the Lando Compose service.
 Unlike other services, `compose` does not require a `version`, instead it allows you to directly configure Docker Compose's top-level `volumes`, `networks`, and `services` config directly.
 
 ::: tip We highly recommend you check the Docker Compose docs!
-`services`, `volumes` and `networks` below come directly from Docker Compose so we *highly recommend* you check out their [docs](https://docs.docker.com/compose/compose-file/).
+`services`, `volumes` and `networks` below come directly from Docker Compose so we *highly recommend* you check out their [docs](https://docs.docker.com/reference/compose-file/).
 :::
 
 ```yaml

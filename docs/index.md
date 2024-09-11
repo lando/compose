@@ -14,7 +14,7 @@ We recommend you check out the [Lando Service](https://docs.lando.dev/core/v3/se
 
 This service is a "catch all" that allows power users to specify custom services that are not currently one of Lando's [supported services](https://docs.lando.dev/core/v3/services/lando.html). You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/core/v3/services/lando.html) top-level config in your [Landofile](https://docs.lando.dev/core/v3).
 
-Technically speaking, this service is just a way for a user to define a service directly using the [Docker Compose V3](https://docs.docker.com/compose/compose-file/) file format.
+Technically speaking, this service is just a way for a user to define a service directly using the [Docker Compose V3](https://docs.docker.com/reference/compose-file/) file format.
 
 **THIS MEANS THAT IT IS UP TO THE USER TO DEFINE A SERVICE CORRECTLY**.
 
